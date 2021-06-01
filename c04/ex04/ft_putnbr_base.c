@@ -6,7 +6,7 @@
 /*   By: spencerwongyeongli <spencerwongyeongli@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/31 12:45:33 by spwong            #+#    #+#             */
-/*   Updated: 2021/05/31 16:18:05 by spencerwong      ###   ########.fr       */
+/*   Updated: 2021/05/31 21:17:23 by spencerwong      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,9 +86,4 @@ void    ft_putnbr_base(int  nbr, char *base)
         ft_putnbr_base(nbr / base_len, base);
         ft_putnbr_base(nbr % base_len, base);
     }
-}
-
-int main()
-{
-    ft_putnbr_base(-10, "0123456789abcdef");
 }
