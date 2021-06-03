@@ -3,25 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spwong <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: spencerwongyeongli <spencerwongyeongli@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/28 12:21:25 by spwong            #+#    #+#             */
-/*   Updated: 2021/05/28 12:23:41 by spwong           ###   ########.fr       */
+/*   Updated: 2021/06/03 18:17:08 by spencerwong      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
 void	ft_putstr(char *str)
 {
 	while (*str)
 	{
-		ft_putchar(*str);
+		write(1, &str, 1);
 		str++;
 	}
 }
